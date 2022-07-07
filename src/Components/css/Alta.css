@@ -1,0 +1,27 @@
+.moeda-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 100px;
+}
+
+.moeda-texto{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+
+.moeda-texto span{
+    color: white;
+}
+
+.moeda-symb{
+    text-transform: uppercase;
+}
+
+.moeda-valor{
+    font-size:20px;
+    text-align: center;
+}

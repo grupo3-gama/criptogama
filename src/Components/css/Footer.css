@@ -1,0 +1,44 @@
+.footer{
+    background: rgba(0, 0, 0, .3);
+    color: white;
+}
+
+.footer-upper{
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+
+.footer-mid{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-widget-logo{
+    width: 150px;
+}
+
+.footer-cop{
+    position: relative;
+    top: -10px;
+    text-align: center;
+}
+
+.footer-cop h1{
+    font-size: 16px;
+    font-weight: 400;
+    color: #74727a;
+    margin: 0;
+}
+
+.footer-cop a{
+    color: var(--primary);
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+.footer-cop a:hover{
+    color: var(--secondary);
+    transition: all 0.4s ease;
+}

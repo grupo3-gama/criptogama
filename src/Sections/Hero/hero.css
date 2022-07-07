@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --primary: #7f37f3;
+    --secondary: #5FD43C;
+    --bg-color: #303841;
+}
+
+.home{
+    background: #303841;
+}
+
+.color-1{
+    color: var(--secondary);
+}
+.color-2{
+    color: var(--primary);
+}
+
+#hero{
+    font-family: 'Mukta', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text h1{
+    font-size: 50px;
+    animation:moveInhome 2s;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-text p{
+    color:rgba(255, 255, 255, 0.6);
+    font-weight:600;
+    font-size: 15px;
+}
+
+
+.hero-btn{
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2a2833;
+    padding: 13px 41px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.4s ease, color 0.4s ease;
+    background-image: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    position: relative;
+}
+
+.hero-btn::before{
+content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.hero-btn span{
+    position: relative;
+}
+
+.hero-btn:hover{
+    color: #fff;
+}
+
+.hero-btn:hover::before{
+  transform: scaleX(0);
+}
+
+@keyframes moveInhome{
+    0%{opacity:0;transform:translateY(-100px)}
+    100%{opacity:1;transform:translate(0)}
+}
+
+.principal{
+    position: relative;
+    top:50px;
+}

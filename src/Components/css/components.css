@@ -1,0 +1,13 @@
+.carousel-indicators{
+    position: relative;
+    margin-left: 0 !important;
+    width: 370px;
+}
+
+.carousel-control-prev{
+    display: none !important;
+}
+
+.carousel-control-next{
+    display: none !important;
+}
