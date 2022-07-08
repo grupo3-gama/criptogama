@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Lista } from '../../Config/Api'
 import { CryptoState } from '../../Config/Mudarmoeda'
 import {
@@ -17,6 +18,7 @@ import {
   Paper,
   Pagination
 } from '@mui/material';
+import './lista.css'
 
 
 export function numberWithCommas(x) {
@@ -30,6 +32,7 @@ const ListaCryptos = () => {
   const[buscar, setBuscar] = useState('');  
   const {currency, symbol} = CryptoState();
   const [page, setPage] = useState(1);
+  const navigate = useNavigate();
 
   const buscarCoins = async () => {
     setLoading(true)
@@ -60,28 +63,36 @@ const ListaCryptos = () => {
       style={{ margin: 18, fontFamily: "Montserrat" }}
     >
     </Typography>
-    <TextField
-      label="Buscar..."
-      variant="outlined"
-      style={{ marginBottom: 20, width: "100%" }}
-      onChange={(e) => setBuscar(e.target.value)}
-    />
-    <TableContainer component={Paper}>
+    <div className="inputBox">
+        <input 
+        type="text" 
+        onChange={(e) => setBuscar(e.target.value)}
+        required/>
+        <span className='input-span'>Buscar...</span>
+    </div>
+    <TableContainer component={Paper}
+    style={{cursor: 'pointer'}}
+    >
       {loading ? (
-        <LinearProgress style={{ backgroundColor: "gold" }} />
+        <LinearProgress style={{ backgroundColor: "#303841" }} />
       ) : (
         <Table aria-label="simple table">
-          <TableHead style={{ backgroundColor: "#EEBC1D" }}>
+          <TableHead style={{
+             backgroundColor: "#303841",
+             border: "1px solid #FFF",
+             }}>
             <TableRow>
-              {["Coin", "Price", "24h Change", "Market Cap"].map((head) => (
+              {["Moeda", "Valor", "Atualização(24H)", "Capitalização de mercado"].map((head) => (
                 <TableCell
                   style={{
-                    color: "black",
-                    fontWeight: "700",
-                    fontFamily: "Montserrat",
+                    color: "#FFF",
+                    fontSize: "17px",
+                    fontWeight: "600",
+                    fontFamily: "Mukta",
+                    textTransform: "uppercase",
                   }}
                   key={head}
-                  align={head === "Coin" ? "" : "right"}
+                  align={head === "Moeda" ? "" : "right"}
                 >
                   {head}
                 </TableCell>
@@ -98,6 +109,7 @@ const ListaCryptos = () => {
                   <TableRow
                     className={row}
                     key={row.name}
+                    onClick={() => navigate(`/moeda/${row.id}`)}
                   >
                     <TableCell
                       component="th"
@@ -111,7 +123,6 @@ const ListaCryptos = () => {
                         src={row?.image}
                         alt={row.name}
                         height="50"
-                        style={{ marginBottom: 10 }}
                       />
                       <div
                         style={{ display: "flex", flexDirection: "column" }}
@@ -119,6 +130,7 @@ const ListaCryptos = () => {
                         <span
                           style={{
                             textTransform: "uppercase",
+                            fontWeight: "600",
                             fontSize: 22,
                           }}
                         >
@@ -157,8 +169,6 @@ const ListaCryptos = () => {
         </Table>
       )}
     </TableContainer>
-
-    {/* Comes from @material-ui/lab */}
     <Pagination
       count={(buscaManual()?.length / 10).toFixed(0)}
       style={{
@@ -167,10 +177,8 @@ const ListaCryptos = () => {
         display: "flex",
         justifyContent: "center",
       }}
-      classes='moeda'
       onChange={(_, value) => {
         setPage(value);
-        window.scroll(0, 450);
       }}
     />
   </Container>
