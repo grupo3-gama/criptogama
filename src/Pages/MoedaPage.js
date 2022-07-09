@@ -1,7 +1,5 @@
 import React from 'react'
 import './css/pages.css'
-import Particles from 'react-tsparticles'
-import { loadFull } from "tsparticles";
 import Sobre from '../Sections/SobreaMoeda/Sobre';
 
 const MoedaPage = () => {
