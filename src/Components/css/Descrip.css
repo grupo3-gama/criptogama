@@ -1,0 +1,46 @@
+.descricao{
+    display: none;
+}
+
+.ativo{
+    display: inline;
+    background-color: red;
+}
+
+.seletor{
+    display: flex;
+    gap: 30px
+}
+
+.seletor-item{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    margin: 0 10px 0 0;
+    border-bottom: 2px solid #fff;
+    transition: .5s;
+}
+
+.seletor-item:hover{
+    animation: ColorAnimation 10s infinite alternate;
+}
+
+.ativo{
+    animation: ColorAnimation 10s infinite alternate;
+}
+
+@keyframes ColorAnimation{
+    0%  {border-color: #04e5e5;}
+    10% {border-color: #f37055;}
+    20% {border-color: #ef4e7b;}
+    30% {border-color: #a166ab;}
+    40% {border-color: #5073b8;}
+    50% {border-color: #04e5e5;}
+    60% {border-color: #07b39b;}
+    70% {border-color: #6fba82;}
+    80% {border-color: #5073b8;}
+    90% {border-color: #1098ad;}
+    100% {border-color: #f37055;}
+}
