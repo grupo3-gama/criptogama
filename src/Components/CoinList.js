@@ -4,13 +4,17 @@ import { WatchListContext } from '../context/watchlist';
 
 const CoinList = () => {
   const [coins, setCoins] = useState([]);
-  const {watchlist} = useContext(WatchListContext)
+  const {watchlist} = useContext(WatchListContext);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     const fetchApiData = async () => {
+      setLoading(true);
       const response = await coinGecko.get('/coins/markets', {
         vs_currency: 'usd',
-        ids: 'bitcoin, ethereum',
+        ids: watchlist.join(','),
       });
+      setCoins(response.data);
+      setLoading(false);
     };
     fetchApiData();
   }, []);
