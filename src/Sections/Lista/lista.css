@@ -1,0 +1,59 @@
+
+
+
+.inputBox 
+{
+	position: relative;
+	width: 100%;
+}
+.inputBox input 
+{
+	padding: 10px 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	width: 100%;
+	background: rgb(243, 243, 243);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    margin-bottom: 20px;
+	color: rgb(10, 10, 10);
+	font-size: 1em;
+	transition: 0.5s;
+}
+
+.inputBox span 
+{
+	position: absolute;
+	left: 0;
+	padding: 10px 10px;
+	pointer-events: none;
+	font-size: 1em;
+	transition: 0.5s;
+	color: #631ED6;
+}
+
+.inputBox input:valid ~ .input-span, 
+.inputBox input:focus ~ .input-span 
+{
+	color: #631ED6;
+	font-size: 0.65em;
+	transform: translateX(10px) translateY(-7px);
+	padding: 0 5px;
+	background: #1d2b3a;
+	border-left: 1px solid #631ED6;
+	border-right: 1px solid #631ED6;
+	letter-spacing: 0.2em;
+}
+.inputBox:nth-child(2) input:valid ~ .input-span, 
+.inputBox:nth-child(2) input:focus ~ .input-span 
+{
+	border-radius: 2px;
+	background: #631ED6;
+    font-size: 15px;
+	color: #ffffff;
+}
+.inputBox input:valid, 
+.inputBox input:focus 
+{
+	border: 1px solid #631ED6;
+} 
