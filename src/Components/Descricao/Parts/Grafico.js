@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Grafico = () => {
-  return (
-    <div>Grafico</div>
-  )
-}
+  return <div>Grafico</div>;
+};
 
-export default Grafico
+export default Grafico;
