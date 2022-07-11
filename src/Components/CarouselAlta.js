@@ -39,7 +39,7 @@ const CarouselAlta = () => {
     let lucro = coin.price_change_percentage_24h >= 0;
 
     return (
-      <a className="moeda-cont" href={`/moeda/${coin.id}`}>
+      <a key={coin.id} className="moeda-cont" href={`/moeda/${coin.id}`}>
         <img
           src={coin?.image}
           alt={coin.name}
