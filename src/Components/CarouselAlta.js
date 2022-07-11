@@ -17,12 +17,8 @@ const CarouselAlta = () => {
 
     const buscarMoedaAlta = async () => {
     const { data } = await axios.get(MoedaAlta(currency));
-    console.log(data);
     setTrending(data);
   };
-
-
-  console.log(trending);
 
   useEffect(() => {
     buscarMoedaAlta();
