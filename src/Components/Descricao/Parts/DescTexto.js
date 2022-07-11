@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import axios from 'axios';
 import { useParams } from 'react-router-dom'
-import { MoedaUnica } from '../../../../Config/Api'
+import { MoedaUnica } from '../../../Config/Api'
 
 const DescTexto = () => {
 

@@ -1,23 +1,24 @@
 .navbar{
     position: absolute !important;
-    transition: all .5s;
+    transition: all .1s;
     width: 100%;
     z-index: 9999999;
 }
 
 .ativa{
     position: fixed !important;
-    background: rgba(0, 0, 0, .2);
-    transition: all .5s;
+    background: rgba(0, 0, 0, .7);
+    transition: all 1s;
     width: 100%;
     z-index: 9999999;
-    padding: 0 !important;
+    max-height: 100px;
 }
 
 .container{
     background: transparent;
-  position: relative;
-  display: block;
+    position: relative;
+    display: block;
+
 }
 
 .teste{

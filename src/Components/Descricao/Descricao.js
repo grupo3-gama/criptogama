@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, {keyframes} from 'styled-components'
-import '../../css/Descrip.css'
+import '../css/Descrip.css'
 import DescTexto from './Parts/DescTexto'
 import Grafico from './Parts/Grafico'
 
