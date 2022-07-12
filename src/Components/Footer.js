@@ -1,5 +1,8 @@
 import React from 'react'
 import Logo from '../Assets/images/logoname.png'
+import Facebook from '../Assets/images/facebook.png'
+import Instagram from '../Assets/images/instagram.png'
+import Twitter from '../Assets/images/twitter.png'
 import { Container, Row, Col } from 'react-bootstrap'
 import './css/Footer.css'
 
@@ -31,82 +34,50 @@ const Footer = () => {
                                 <h3 className='footer-widget-tit'>Explore</h3>
                                 <ul className='footer-widget-links'>
                                     <li>
-                                        <a href='#'>Home</a>
+                                        <a href='https://www.gama.academy'>Gama Academy</a>
                                     </li>
                                     <li>
-                                        <a href='#'>Home</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Home</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Home</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Home</a>
-                                    </li>
+                                        <a href='https://www.coingecko.com'>CoinGecko</a>
+                                    </li> 
                                 </ul>
                             </div>
                             <div className='footer-widget'>
                                 <h3 className='footer-widget-tit'>Serviços</h3>
                                 <ul className='footer-widget-links'>
                                     <li>
-                                        <a href='#'>Home</a>
+                                        <a href='https://www.gama.academy'>Gama Academy</a>
                                     </li>
                                     <li>
-                                        <a href='#'>Home</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Home</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Home</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Home</a>
-                                    </li>
+                                        <a href='https://www.coingecko.com'>CoinGecko</a>
+                                    </li> 
                                 </ul>
-                            </div>
+                            </div>                            
                             <div className='footer-widget'>
                                 <h3 className='footer-widget-tit'>Links</h3>
                                 <ul className='footer-widget-links'>
                                     <li>
-                                        <a href='#'>Home</a>
+                                        <a href='https://www.gama.academy'>Gama Academy</a>
                                     </li>
                                     <li>
-                                        <a href='#'>Home</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Home</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Home</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Home</a>
-                                    </li>
+                                        <a href='https://www.coingecko.com'>CoinGecko</a>
+                                    </li>                                    
                                 </ul>
-                            </div>
+                            </div>                           
+
                         </Col>
                         <Col lg={3}>
-                            <div className='footer-widget'>
-                                <div className='footer-social'>
-                                    <a>
-                                        <i>Redes sociais</i>
-                                    </a>
-                                    <a>
-                                        <i>Redes sociais</i>
-                                    </a>
-                                    <a>
-                                        <i>Redes sociais</i>
-                                    </a>
-                                    <a
-                                    href="#none"
-                                    aria-label="social icon"
-                                    aria-hidden="true"
-                                >
-                                    <i className="fa fa-instagram"></i>
-                                </a>
+                            <div className="footer-widget footer-social">
+                                <h3 className='footer-widget-tit '>Redes Sociais</h3>
+                                <div className="footer-social">                                    
+                                        <a href="https://twitter.com/gamaacademybr">
+                                            <img src={Twitter} className='twitter'></img>                                    
+                                        </a>                              
+                                        <a href="https://www.facebook.com/gamaacademybr">
+                                            <img src={Facebook} className='facebook'></img>                                    
+                                        </a>                                                                                                
+                                        <a href="https://www.instagram.com/gamaacademy/">
+                                            <img src={Instagram} className='instagram'></img>                                    
+                                        </a>                                            
                                 </div>
                             </div>
                         </Col>
