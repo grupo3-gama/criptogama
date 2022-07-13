@@ -5,17 +5,17 @@ import MoedaPage from './Pages/MoedaPage';
 import Home from './Pages/Home';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import Login from './Pages/login';
 
 function App() {
   return (
    <BrowserRouter>
    <div>
-    <Navbar />
       <Routes>
           <Route path='/' element={<Home/>} exact/>
-          <Route path='moeda/:id' element={<MoedaPage/>}  />          
+          <Route path='moeda/:id' element={<MoedaPage/>}  />
+          <Route path='/login' element={<Login/>}/>          
         </Routes>
-    <Footer />
    </div>
    </BrowserRouter>
   );

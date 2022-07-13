@@ -45,7 +45,7 @@ const Header = () => {
             </select>
           </Nav>
           <Nav className='nav-login'>
-                <a href="#" className="nav-btn">
+                <a href="/login" className="nav-btn">
                     <span>Login</span>
                 </a>
           </Nav>
