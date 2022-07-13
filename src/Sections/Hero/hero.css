@@ -27,6 +27,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    min-height: 800px;
 }
 
 .hero-text h1{
@@ -96,7 +97,6 @@ content: "";
 @media only screen and (max-width: 991px) {
     .hero{
         margin-top: 200px;
-        min-height: 900px;
     }
     .hero-text{
         width: 100%;
