@@ -84,6 +84,10 @@ content: "";
   transform: scaleX(0);
 }
 
+.carousel-indicators{
+    margin-left: -20px !important;
+}
+
 @keyframes moveInhome{
     0%{opacity:0;transform:translateY(-100px)}
     100%{opacity:1;transform:translate(0)}
