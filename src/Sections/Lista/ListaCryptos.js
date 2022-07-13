@@ -41,8 +41,6 @@ const ListaCryptos = () => {
 
   };
 
-  console.log(coins);
-
   useEffect(() => {
     buscarCoins()
   },[currency]);

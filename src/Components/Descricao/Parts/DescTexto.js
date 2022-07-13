@@ -17,8 +17,6 @@ const DescTexto = () => {
   useEffect(() =>{
     fetchCoin();
   },[]);
-  
-  console.log(coin);
 
   return (
     <div>{(coin?.description.en.split(". ")[0])}</div>
