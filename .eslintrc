@@ -1,7 +1,8 @@
 {
   "extends": [
     "eslint:recommended", 
-    "eslint-config-prettier", 
+    "plugin:react/recommended", 
+    "plugin:prettier/recommended",      
     "prettier",     
     "plugin:import/errors",
     "plugin:react/recommended",
@@ -9,18 +10,20 @@
     "plugin:react-hooks/recommended"    
   ],
   "rules": {
-    "prettier/prettier": ["error"],
+    "prettier/prettier": ["off"],
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
-    "react/self-closing-comp": "error",
+    "react/self-closing-comp": "off",
     "react-hooks/exhaustive-deps": "off",
-    "react/jsx-uses-react": "error",   
-    "react/jsx-uses-vars": "error",
+    "react/jsx-uses-react": "off",   
+    "react/jsx-uses-vars": "off",
     "jsx-a11y/alt-text": [0],
     "jsx-a11y/anchor-is-valid": "off", 
-    "jsx-a11y/anchor-has-content": "off"
+    "jsx-a11y/anchor-has-content": "off",
+    "jsx-a11y/iframe-has-title": "off",
+    "react/no-unknown-property": "off"
   },
-  "plugins": ["react", "import", "jsx-a11y", "eslint-plugins-prettier"],
+  "plugins": ["react", "import", "jsx-a11y"],
   "parserOptions": {
     "ecmaVersion": 2021,
     "sourceType": "module",
@@ -29,7 +32,7 @@
     }
   },
   "env": {
-    "es6": true,
+    "es2021": true,
     "browser": true,
     "jest": true,
     "node": true

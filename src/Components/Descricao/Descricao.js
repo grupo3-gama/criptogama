@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import styled, {keyframes} from 'styled-components'
 import '../css/Descrip.css'

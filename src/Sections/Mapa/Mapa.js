@@ -1,8 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import {Container} from 'react-bootstrap'
 import './mapa.css'
-
-
 
 const Map = () => {
     return (

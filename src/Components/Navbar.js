@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react'
 import { CryptoState } from '../Config/Mudarmoeda';
 import Logo from '../Assets/images/logoname.png'
 import './css/Navbar.css'

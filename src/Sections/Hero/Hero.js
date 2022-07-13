@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { Container, Row, Col} from 'react-bootstrap'
 import CardsSlider from '../../Components/CardsSlider'

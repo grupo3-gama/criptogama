@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import Hero from '../Sections/Hero/Hero'
 import ListaCryptos from '../Sections/Lista/ListaCryptos'

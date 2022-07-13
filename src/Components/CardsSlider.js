@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import ethe from '../Assets/images/ethereum.png';
