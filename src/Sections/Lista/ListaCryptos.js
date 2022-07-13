@@ -106,7 +106,7 @@ const ListaCryptos = () => {
                   <TableRow
                     className={row}
                     key={row.name}
-                    onClick={() => navigate(`/moeda/${row.id}`)}
+                    onClick={() => (navigate(`/moeda/${row.id}`), window.scroll(0,0))}
                   >
                     <TableCell
                       component="th"
