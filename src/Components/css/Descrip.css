@@ -2,6 +2,13 @@
     display: none;
 }
 
+.desc-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .ativo{
     display: inline;
     background-color: red;
@@ -43,4 +50,60 @@
     80% {border-color: #5073b8;}
     90% {border-color: #1098ad;}
     100% {border-color: #f37055;}
+}
+
+.text-item{
+    margin-top: 10px;
+    max-width: 400px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+
+.cresci-img{
+    position: relative;
+    width: 700px;
+}
+
+@media screen and (max-width: 1300px){
+    .cresci-img{
+       margin-left: -100px;
+    }
+}
+
+@media screen and (max-width: 1210px){
+    .cresci-img{
+       margin-left: -150px;
+    }
+}
+
+@media screen and (max-width: 1083px){
+    .cresci-img{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .cresci-img{
+        margin-left: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+     }
+  }
+
+  @media screen and (max-width: 806px){
+    .cresci-img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .cresci-img{
+        width: 300px;
+    }
+    .sc-bBrHrO{
+        font-size: 15px !important;
+    }
 }

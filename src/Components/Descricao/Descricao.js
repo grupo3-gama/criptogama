@@ -1,8 +1,9 @@
 import React from 'react'
 import styled, {keyframes} from 'styled-components'
-import '../../css/Descrip.css'
+import '../css/Descrip.css'
 import DescTexto from './Parts/DescTexto'
 import Grafico from './Parts/Grafico'
+import Mensal from './Parts/Mensal'
 
 class descricao extends React.Component {
 
@@ -47,10 +48,10 @@ class descricao extends React.Component {
                         Descricao
                     </Seletor>
                     <Seletor className={this.state.tab === "grafico" ? "active" : ""} onClick={() => this.setState({tab: "grafico"})}>
-                        Gráfico
+                        Gráfico Anual
                     </Seletor>
                     <Seletor className={this.state.tab === "skills" ? "active" : ""} onClick={() => this.setState({tab: "skills"})}>
-                        Trabalhos
+                        Gráfico Mensal
                     </Seletor>
                 </div>
                 <div className='desc-text'>
@@ -70,7 +71,7 @@ class descricao extends React.Component {
                     className='text-item'
                     style={{display: this.state.tab === 'skills' ? "block" : "none"}}
                     >
-                        Skills
+                        <Mensal />
                     </div>
                 </div>
             </div>

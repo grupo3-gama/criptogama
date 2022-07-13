@@ -3,7 +3,7 @@ import axios from 'axios';
 import Container from 'react-bootstrap/Container'
 import { useParams } from 'react-router-dom'
 import { MoedaUnica } from '../../Config/Api'
-import Descricao from '../../Components/css/Descricao/Descricao';
+import Descricao from '../../Components/Descricao/Descricao';
 import './sobre.css'
 
 const Sobre = () => {
@@ -23,7 +23,9 @@ const Sobre = () => {
     <div className='sobre-content'>
         <Container className='sobre-container'>
             <div className='sobre-left'>
-                <img className='sobre-img' src={coin?.image.large} alt={coin?.name}/>
+                <div className='card-image'>
+                    <img className='sobre-img' src={coin?.image.large} alt={coin?.name}/>
+                </div>
             </div>
             <div className='sobre-right'>
                 <div className='sobre-info'>

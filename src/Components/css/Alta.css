@@ -22,6 +22,17 @@
 }
 
 .moeda-valor{
-    font-size:20px;
+    font-size: 18px;
     text-align: center;
+}
+
+a{
+    color: #5FD43C !important;
+    text-decoration: none !important;
+    transition: all .5s ease;
+}
+
+a:hover{
+    color: blueviolet !important;
+    transition: all .5s ease;
 }

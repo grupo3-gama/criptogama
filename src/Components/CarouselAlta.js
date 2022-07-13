@@ -20,6 +20,7 @@ const CarouselAlta = () => {
     setTrending(data);
   };
 
+
   useEffect(() => {
     buscarMoedaAlta();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -27,12 +28,16 @@ const CarouselAlta = () => {
 
     const responsive = {
       0: {
+        items: 1,
+      },
+      500:{
         items: 2,
       },
-      512: {
-        items: 4,
-      },
-    }
+        1024: {
+            items: 4
+        }
+      }
+
 
     const items = trending.map((coin) => {
 
@@ -44,8 +49,8 @@ const CarouselAlta = () => {
           src={coin?.image}
           alt={coin.name}
           className='moeda-img'
-          height="80"
-          style={{marginBottom: 10}}
+          height="40"
+          style={{marginBottom: 30}}
           />
           <div className='moeda-texto'>
             <span className='moeda-symb'>

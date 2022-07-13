@@ -7,9 +7,7 @@ import {
   Container,
   TableCell,
   LinearProgress,
-  ThemeProvider,
   Typography,
-  TextField,
   TableBody,
   TableRow,
   TableHead,
@@ -57,9 +55,9 @@ const ListaCryptos = () => {
 
 
   return (
-    <Container style={{ textAlign: "center" }}>
+    <Container style={{ textAlign: "center", marginTop: 80 }} id='lista'>
     <Typography
-      variant="h4"
+      variant="h5"
       style={{ margin: 18, fontFamily: "Montserrat" }}
     >
     </Typography>

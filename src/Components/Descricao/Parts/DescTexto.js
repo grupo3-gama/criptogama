@@ -1,7 +1,8 @@
 import React, { useState, useEffect} from 'react'
 import axios from 'axios';
 import { useParams } from 'react-router-dom'
-import { MoedaUnica } from '../../../../Config/Api'
+import { MoedaUnica } from '../../../Config/Api'
+import parse from 'html-react-parser';
 
 const DescTexto = () => {
 
@@ -15,10 +16,14 @@ const DescTexto = () => {
   useEffect(() =>{
     fetchCoin();
   },[]);
+  
+  console.log(coin);
 
   return (
     <div>{(coin?.description.en.split(". ")[0])}</div>
   )
 }
 
-export default DescTexto
+export default DescTexto;
+
+

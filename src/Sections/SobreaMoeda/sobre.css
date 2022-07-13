@@ -23,7 +23,7 @@
 }
 
 .glitch {
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: 700;
     text-transform: uppercase;
     position: relative;
@@ -109,3 +109,61 @@
     }
   }
   
+
+.card-image{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.card-image::before{
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 140%;
+  background: linear-gradient(#5FD43C, #631ED6);
+  animation: cardimg 4s linear infinite;
+  border-radius: 20px;
+}
+
+.card-image::after{
+  content: '';
+  position: absolute;
+  background: #303841;
+  inset: 4px;
+}
+
+@keyframes cardimg {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.sobre-img{
+  z-index: 20;
+}
+
+
+@media screen and (max-width: 900px){
+  .sobre-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 500px){
+  .glitch{
+    font-size: 3rem;
+  }
+}

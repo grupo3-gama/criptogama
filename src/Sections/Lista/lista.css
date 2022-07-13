@@ -1,11 +1,9 @@
-
-
-
 .inputBox 
 {
 	position: relative;
-	width: 100%;
+	width: 100%;	
 }
+
 .inputBox input 
 {
 	padding: 10px 10px;

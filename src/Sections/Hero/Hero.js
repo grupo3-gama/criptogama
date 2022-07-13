@@ -8,7 +8,7 @@ import './hero.css'
 const Hero = () => {
   return (
     <section className='hero' id='hero'>
-        <Container>
+        <Container className='hero-content'>
             <Row className='align-items-center principal'>
                 <Col lg={6}>
                     <div className='hero-text'>
@@ -19,11 +19,13 @@ const Hero = () => {
                         </a>
                     </div>
                 </Col>
-                <Col lg={6}>
+                <Col lg={6} className='cardslider-hero'>
                     <CardsSlider    />
                 </Col>
             </Row>
-            <CarouselAlta   />
+            <div className='carousel-hero'>
+                <CarouselAlta   />
+            </div>
         </Container>
     </section>
   )
