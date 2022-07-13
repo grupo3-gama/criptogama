@@ -55,3 +55,7 @@
 {
 	border: 1px solid #631ED6;
 } 
+
+.MuiContainer-root{
+	margin-top: 0 !important;
+}
