@@ -1,14 +1,15 @@
 {
   "extends": [
-    "prettier",
-    "eslint:recommended",
-    "eslint-config-prettier",
+    "eslint:recommended", 
+    "eslint-config-prettier", 
+    "prettier",     
     "plugin:import/errors",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended"    
   ],
   "rules": {
+    "prettier/prettier": ["error"],
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react/self-closing-comp": "error",
@@ -19,7 +20,7 @@
     "jsx-a11y/anchor-is-valid": "off", 
     "jsx-a11y/anchor-has-content": "off"
   },
-  "plugins": ["react", "import", "jsx-a11y", "eslint"],
+  "plugins": ["react", "import", "jsx-a11y", "eslint-plugins-prettier"],
   "parserOptions": {
     "ecmaVersion": 2021,
     "sourceType": "module",
