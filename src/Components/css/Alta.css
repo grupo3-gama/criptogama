@@ -36,3 +36,15 @@ a:hover{
     color: blueviolet !important;
     transition: all .5s ease;
 }
+
+@media only screen and (max-width: 991px) {
+    .moeda-cont{
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .moeda-cont{
+        margin-top: 120px;
+    }
+}
