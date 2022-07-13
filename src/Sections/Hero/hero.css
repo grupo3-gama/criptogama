@@ -92,3 +92,52 @@ content: "";
     position: relative;
     top:50px;
 }
+
+@media only screen and (max-width: 991px) {
+    .hero{
+        margin-top: 200px;
+        min-height: 900px;
+    }
+    .hero-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .cardslider-hero{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .carousel-hero{
+        min-height: 350px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .hero{
+        margin-top: 250px;
+    }
+}
+
+@media only screen and (max-width: 446px) {
+    .carousel-hero{
+        min-height: 400px;
+        margin-top: -30px;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .hero-text h1{
+        font-size: 30px;
+        animation:moveInhome 2s;
+        font-weight: bold;
+        color: white;
+    }
+}
+

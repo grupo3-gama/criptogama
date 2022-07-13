@@ -11,3 +11,26 @@
 .carousel-control-next{
     display: none !important;
 }
+
+@media only screen and (max-width: 390px) {
+    .slider-card{
+        width: 300px !important;
+    }
+    .card-img{
+        width: 300px !important;
+    }
+    .card-body h5{
+        font-size: 15px;
+    }
+    .card-button{
+        width: 100px;
+        right: 0;
+        margin-top: 4px;
+    }
+    .icon-img{
+        height: 50px !important;
+    }
+    .carousel-indicators{
+        left: -30px !important;
+    }
+}

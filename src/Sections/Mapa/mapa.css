@@ -4,7 +4,7 @@
 }
 .pai{
     display: flex;
-
+    flex: 1;
 }
 
 .col1{
@@ -16,7 +16,7 @@
 
 .formulario{
     height: 501px;
-    width: 500px;
+    width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;    
@@ -37,24 +37,101 @@
     margin-bottom: 30px;
     margin-left: 6px;
 }
-.inputBox{
-    position: relative;
-    width: 250px;
-      
-  
+.inputBox2 
+{
+	position: relative;
+	width: 250px;
+}
+.inputBox2 input 
+{
+	padding: 10px 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	width: 100%;
+	background: #111;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    margin-bottom: 20px;
+	color: #fff;
+	font-size: 1em;
+	transition: 0.5s;
 }
 
-.input{
-    border-top: 0 none !important;
-    border-left: 0 none !important;
-    border-right: 0 none !important;
-    background-color: #111 !important;
-    border-color: #631ED6;
-    color: #fff !important;
-    transition: .5s;
+
+.inputBox2 textarea 
+{
+	padding: 10px 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	width: 100%;
+	background: #111;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    margin-bottom: 10px;
+	color: #fff;
+	font-size: 1em;
+	transition: 0.5s;
 }
 
-.botao {
+.inputBox2 span 
+{
+	position: absolute;
+	left: 0;
+	padding: 10px 10px;
+	pointer-events: none;
+	font-size: 1em;
+	transition: 0.5s;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.45);
+}
+.inputBox2 input:valid ~ span, 
+.inputBox2 input:focus ~ span 
+{
+	color: #5FD43C;
+	font-size: 0.65em;
+	transform: translateX(10px) translateY(-7px);
+	padding: 0 5px;
+	background: #1d2b3a;
+	border-left: 1px solid #5FD43C;
+	border-right: 1px solid #5FD43C;
+	letter-spacing: 0.2em;
+}
+.inputBox2:nth-child(2) input:valid ~ span, 
+.inputBox2:nth-child(2) input:focus ~ span 
+{
+	border-radius: 2px;
+	background: #5FD43C;
+	color: #1d2b3a;
+}
+.inputBox2 input:valid, 
+.inputBox2 input:focus 
+{
+	border: 1px solid #5FD43C;
+} 
+
+
+.inputBox2 textarea:valid ~ span, 
+.inputBox2 textarea:focus ~ span 
+{
+	color: #5FD43C;
+	font-size: 0.65em;
+	transform: translateX(10px) translateY(-7px);
+	padding: 0 5px;
+	background: #1d2b3a;
+	border-left: 1px solid #5FD43C;
+	border-right: 1px solid #5FD43C;
+	letter-spacing: 0.2em;
+}
+.inputBox2:nth-child(2) textarea:valid ~ span, 
+.inputBox2:nth-child(2) textarea:focus ~ span 
+{
+	border-radius: 2px;
+	background: #5FD43C;
+	color: #1d2b3a;
+}
+
+
+.botao{
     display: block;
     height: 50px;
     width: 186px;
@@ -62,9 +139,46 @@
     border: none;
     overflow: hidden;
     transition: .5s;
-    background-color: #252a30;
+    background-color: #000;
 }
 
-.botao:hover {
+.botao:hover{
     background: #444;
+}
+
+.botao span{
+    position: relative;
+    top: 0;
+    color: #fff;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.map-content{
+    display: flex;
+    justify-content: center;    
+}
+
+@media only screen and (max-width: 991px) {
+    .map-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .formulario{
+        height: 401px;
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .formulario{
+        height: 501px;
+        width: 100%;
+    }
+    .mapa-map{
+        width: 100%;
+    }
 }
