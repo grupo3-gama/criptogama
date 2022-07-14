@@ -23,6 +23,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.1.3",
+    "rimraf": "^3.0.2",
     "styled-components": "^5.3.5",
     "tsparticles": "^2.1.3",
     "web-vitals": "^2.1.4"
@@ -34,7 +35,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write './**/*.{js,jsx,css,md,json}' --config ./.prettierrc",
+    "clean": "rimraf  ./build -Recurse -Force"
   },
   "browserslist": {
     "production": [
