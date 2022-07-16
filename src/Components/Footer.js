@@ -36,15 +36,15 @@ const Footer = () => {
                             <div className='footer-widget'>
                                 <h3 className='footer-widget-tit'>Serviços</h3>
                                 <div className='footer-links'>
-                                    <a className='footer-text' href='https://www.gama.academy'>Gama Academy</a>  
-                                    <a className='footer-text' href='https://www.coingecko.com'>CoinGecko</a> 
+                                    <a className='footer-text' href='https://criptodev.corporate.gama.academy'>Cripto Dev</a>  
+                                    <a className='footer-text' href='https://blockchainacademy.com.br'>Blockchain Academy</a> 
                                 </div>
                             </div>                            
                             <div className='footer-widget'>
                                 <h3 className='footer-widget-tit'>Links</h3>
                                 <div className='footer-links'>
-                                    <a className='footer-text' href='https://www.gama.academy'>Gama Academy</a>  
-                                    <a className='footer-text' href='https://www.coingecko.com'>CoinGecko</a> 
+                                    <a className='footer-text' href='https://bitcoin.org/pt_BR/'>Bitcoin</a>  
+                                    <a className='footer-text' href='https://ethereum.org/pt-br/'>Ethereum</a> 
                                 </div>
                             </div>                           
 
@@ -69,7 +69,7 @@ const Footer = () => {
                 </Container>
             </div>
             <div className='footer-cop'>
-                <h1> copyright 2022 por<a href='#'> Grupo3 - GamaAcademy</a></h1>
+                <h1> copyright 2022 por<a href='#'> Grupo3 - GamaAcademy <a href='https://www.coingecko.com/pt/api/documentation'> Data provided by CoinGecko</a></h1>
             </div>
         </footer>
   )
