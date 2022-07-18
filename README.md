@@ -54,4 +54,4 @@
 ## Aplicacao
 
  ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
- [![crypto03](./src/Assets/readme/landing.png)](https://criptogama-zeta.vercel.app/)
+ [![crypto03](./src/Assets/readme/landing.png)](https://criptogama.vercel.app/)

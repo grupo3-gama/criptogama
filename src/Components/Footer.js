@@ -69,7 +69,7 @@ const Footer = () => {
                 </Container>
             </div>
             <div className='footer-cop'>
-                <h1> copyright 2022 por<a href='#'> Grupo3 - GamaAcademy <a href='https://www.coingecko.com/pt/api/documentation'> Data provided by CoinGecko</a></h1>
+                <h1> copyright 2022 por <a href='#'> Grupo3 - GamaAcademy</a><a href='https://www.coingecko.com/pt/api/documentation'> Data provided by CoinGecko</a> </h1>
             </div>
         </footer>
   )
